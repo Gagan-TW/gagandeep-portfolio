@@ -1,0 +1,91 @@
+.aboutPage {
+  background: #faf9ff;
+  min-height: 100vh;
+  padding: 4rem 0;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.hook {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #4c1d95;
+  line-height: 1.3;
+  margin-bottom: 2.5rem;
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+.codeBlock {
+  background: #1e1b4b;
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 2.5rem 0;
+}
+
+.codeLabel {
+  color: #a78bfa;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.codeBlock pre {
+  color: #e2e8f0;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.codeCaption {
+  color: #f59e0b;
+  font-weight: 600;
+  margin-top: 1.2rem;
+  margin-bottom: 0;
+}
+
+.pullQuote {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #6d28d9;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  border-left: 4px solid #f59e0b;
+  background: #f5f3ff;
+  border-radius: 0 8px 8px 0;
+  margin: 2rem 0;
+}
+
+.closing {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #4c1d95;
+  margin-top: 2rem;
+}
+
+[data-theme='dark'] .aboutPage {
+  background: #13111f;
+}
+
+[data-theme='dark'] p {
+  color: #e2e8f0;
+}
+
+[data-theme='dark'] .pullQuote {
+  background: #1e1b4b;
+  color: #a78bfa;
+}
