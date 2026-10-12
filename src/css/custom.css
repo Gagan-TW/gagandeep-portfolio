@@ -31,11 +31,11 @@
   --docusaurus-highlighted-code-line-bg: rgba(245, 101, 217, 0.15);
 }
 
-/* Hero */
+/* ---------- Hero ---------- */
 .hero--primary {
   background: linear-gradient(135deg, #1e1b4b 0%, #4c1d95 50%, #6d28d9 100%);
   padding: 2rem 2rem;
-  min-height: 500px;
+  min-height: 420px; /* shorter so the feature images fit on screen */
   display: flex;
   align-items: center;
 }
@@ -50,6 +50,7 @@
 }
 
 .hero__subtitle {
+   color: #c7d7ef !important; /* makes the tagline readable on purple */
   font-family: 'Inter', sans-serif;
   font-size: 1.15rem;
   opacity: 0.85;
@@ -60,7 +61,7 @@
   line-height: 2;
 }
 
-/* Amber CTA button */
+/* ---------- Amber CTA button ---------- */
 .button--secondary {
   background-color: #f59e0b;
   border-color: #f59e0b;
@@ -81,10 +82,10 @@
   box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);
 }
 
-/* Navbar */
+/* ---------- Navbar ---------- */
 .navbar {
   background-color: #1e1b4b;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   font-family: 'Inter', sans-serif;
   font-weight: 500;
 }
@@ -98,49 +99,93 @@
   color: #f59e0b !important;
 }
 
-/* Reduce feature section padding */
-/* Reduce feature section padding */
-.features_src-components-HomepageFeatures-styles-module {
-  padding: 2rem 0;
-}
-
-.features_src-components-HomepageFeatures-styles-module {
-  padding: 10rem 0 2rem 0;
-}
-
-@media (min-width: 769px) {
-  .col--4 {
-    --ifm-col-width: calc(3 / 12 * 100%);
-    flex: 0 0 22%;
-    max-width: 22%;
-  }
-}
-
-.row {
-  gap: 1.5rem;
-  flex-wrap: nowrap;
-}
-
-.col.col--4 {
-  flex: 0 0 23%;
-  max-width: 23%;
-  padding: 0 0.5rem;
-}
-.features_src-components-HomepageFeatures-styles-module {
-  padding-top: 3rem;
+/* ---------- Homepage features ---------- */
+[class*='features_'] {
+  padding: 1.5rem 0 3rem;
   overflow: visible;
 }
 
-.features_src-components-HomepageFeatures-styles-module h3 {
+/* Show the whole image, never cropped */
+[class*='featureSvg_'] {
+  width: 100%;
+  max-width: 200px;
+  height: 160px;
+  object-fit: contain;
+  overflow: visible;
+  margin-bottom: 1rem;
+}
+
+/* Four in a row on desktop */
+@media (min-width: 997px) {
+  [class*='features_'] .row {
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+  }
+
+  [class*='features_'] .col.col--4 {
+    --ifm-col-width: 25%;
+    flex: 1 1 0;
+    max-width: 25%;
+    padding: 0 0.5rem;
+  }
+}
+
+/* Two in a row on tablets */
+@media (min-width: 600px) and (max-width: 996px) {
+  [class*='features_'] .col.col--4 {
+    --ifm-col-width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+[class*='features_'] h3 {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 1.1rem;
   color: #4c1d95;
 }
 
-.features_src-components-HomepageFeatures-styles-module p {
+[class*='features_'] p {
   font-family: 'Inter', sans-serif;
   font-size: 0.95rem;
   line-height: 1.7;
   color: #374151;
+}
+
+[data-theme='dark'] [class*='features_'] h3 {
+  color: #c4b5fd;
+}
+
+[data-theme='dark'] [class*='features_'] p {
+  color: #d1d5db;
+}
+
+/* ---------- Make features + footer fit together ---------- */
+
+/* Less empty space below the feature text */
+[class*='features_'] {
+  padding-bottom: 1rem;
+}
+
+/* Tighter footer */
+.footer {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.footer__title {
+  margin-bottom: 0.5rem;
+}
+
+.footer__item {
+  padding: 0.15rem 0;
+}
+
+.footer__link-item {
+  line-height: 1.6;
+}
+
+.footer__bottom {
+  margin-top: 0.5rem;
 }
