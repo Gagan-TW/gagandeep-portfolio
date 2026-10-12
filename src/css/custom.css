@@ -221,3 +221,19 @@
     object-fit: cover;
   }
 }
+
+/* ---------- Code blocks ---------- */
+.theme-code-block,
+.theme-code-block pre,
+.theme-code-block code,
+pre,
+pre code {
+  background-color: #f5f3ff !important;  /* block background */
+  color: #3b0764 !important;             /* text color */
+}
+
+/* Plain (non-highlighted) code text */
+.theme-code-block .token.plain,
+pre .token.plain {
+  color: #22023b !important;
+}
