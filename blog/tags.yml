@@ -1,19 +1,24 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+learning-in-public:
+  label: Learning in public
+  permalink: /learning-in-public
+  description: Notes from learning and building in the open
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+api-docs:
+  label: API documentation
+  permalink: /api-docs
+  description: Planning, writing, and testing API documentation
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+docs-as-code:
+  label: Docs-as-code
+  permalink: /docs-as-code
+  description: Markdown, Git, and automated publishing for docs
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+ai-docs:
+  label: AI documentation
+  permalink: /ai-docs
+  description: Using AI and prompt engineering in documentation work
+
+portfolio:
+  label: Portfolio
+  permalink: /portfolio
+  description: Updates on my portfolio projects

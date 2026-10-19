@@ -1,47 +1,48 @@
 ---
+id: intro
+slug: /
+title: Welcome to the Learning Hub
+sidebar_label: Start here
 sidebar_position: 1
+description: Lessons that help technical writers write better docs and work comfortably with code, Git, APIs, Python, and SQL.
 ---
 
-# Tutorial Intro
+# Welcome to the Learning Hub
 
-Let's discover **Docusaurus in less than 5 minutes**.
+This is where I teach what I learn. Every lesson here is written by a technical writer, for technical writers.
 
-## Getting Started
+You do not need a computer science degree to follow along. You need curiosity and about 30 minutes a week.
 
-Get started by **creating a new site**.
+## How the hub is organized
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+The lessons sit in two groups. Pick the group that matches what you need right now.
 
-### What you'll need
+**For Technical Writers** is about the craft itself:
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+- [Writing Rules That Always Work](./writing-rules/index.md): clear, consistent writing that developers trust
+- [API Documentation Guide](./api-docs/index.md): how to plan, write, and test API docs
+- [Docs-as-Code Workflow](./docs-as-code/index.md): writing and publishing docs the way developers ship code
 
-## Generate a new site
+**Learn to Code** is about the technical side that writers are often kept out of:
 
-Generate a new Docusaurus site using the **classic template**.
+- [Git & GitHub for Writers](./git-github/index.md)
+- [REST APIs Explained Simply](./rest-apis/index.md)
+- [Python for Technical Writers](./python/index.md)
+- [SQL for Non-Developers](./sql/index.md)
 
-The classic template will automatically be added to your project after you run the command:
+## How each lesson works
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+Every lesson follows the same shape, so you always know what to expect.
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+1. **The idea**, in plain words
+2. **A real example** from documentation work
+3. **Try it yourself**, with a small exercise
+4. **Where it helps you at work**
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+Most lessons also have a matching video on my YouTube channel, plus short tips in between.
 
-## Start your site
+## New lessons every week
 
-Run the development server:
+I add a new lesson every week. Each track page lists what is coming next, so you can see where the hub is going.
 
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+If you want to see these skills used on a real project, visit my [Portfolio](/portfolio).

@@ -20,8 +20,13 @@ function HomepageHeader() {
             <div className={styles.buttons}>
               <Link
                 className="button button--secondary button--lg"
-                to="/docs/intro">
-                Start Learning <span style={{fontSize: '1.25rem', verticalAlign: 'middle'}}>&#x27A1;</span>
+                to="/learn">
+                Start Learning 
+              </Link>
+              <Link
+                className="button button--outline button--secondary button--lg"
+                to="/portfolio">
+                View Portfolio
               </Link>
             </div>
           </div>
@@ -42,8 +47,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title="From Docs to Docs & Code | Gagandeep Kaur"
-      description="Be the technical writer every developer actually wants on their team. Learn Git, REST APIs, Python, SQL, and Docs-as-Code — built by a technical writer who codes.">
+      title="From Docs to Docs & Code"
+      description="Be the technical writer every developer actually wants on their team. Learn Git, REST APIs, Python, SQL, and Docs-as-Code, taught by a technical writer who codes.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
