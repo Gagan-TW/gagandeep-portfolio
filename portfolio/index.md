@@ -8,7 +8,7 @@ description: Gagandeep Kaur's technical writing portfolio. A complete API docume
 
 # Portfolio
 
-I am a technical writer with about five years of experience in API documentation and docs-as-code. This is where I show the work, not just describe it.
+I am a technical writer with over four years of experience in API documentation and docs-as-code. This is where I show the work, not just describe it.
 
 I am building two connected projects in public. Both document the same fictional product, **LoyaltyLoop**, so they read like real work on a real team, not scattered samples.
 
@@ -19,7 +19,24 @@ Each project page shows what I am building, the tools I use, and how far along i
 | Project | What it shows | Status |
 | --- | --- | --- |
 | [Project 1: LoyaltyLoop API Docs](./loyaltyloop/index.md) | A complete, tested API documentation set: quickstart, authentication, concepts, reference, errors, webhooks, batch jobs, and how-to guides | In progress |
-| [Project 2: AI Docs Pipeline](./ai-docs-pipeline/index.md) | An AI pipeline that generates docs from the API spec, with prompt testing, automated quality checks, and human review | Starts late November 2026 |
+| [Project 2: AI Docs Pipeline](./ai-docs-pipeline/index.md) | An AI pipeline that generates docs from the API spec, with prompt testing, automated quality checks, and human review | In progress |
+
+## Writing samples
+
+Before these projects, I wrote documentation for public APIs and real products. Here are selected samples. New AI/ML and data engineering articles are being added this month.
+
+| Sample | What it shows | Status |
+| --- | --- | --- |
+| RAG Explained Simply | AI/ML explainer for beginners | Coming soon |
+| Build an ETL Pipeline with Python and SQL | Hands-on data engineering tutorial | Coming soon |
+   | [Does Backend Feel Like Magic to You?](https://backendworks.hashnode.dev/does-backend-feel-like-magic-to-you) | Step-by-step Node.js API tutorial, tested in Postman | Published |
+   | [How to Build a SaaS Help Centre That Works for Every User](https://docs.google.com/document/d/174Tv0UcltKOY4MEGFnW4t8fic18KobSWw-KQJev1qow/edit?usp=sharing) | Help centre structure, navigation, and search for SaaS products | Published |
+| [Why Audience Analysis Matters in Technical Documentation](https://docs.google.com/document/d/1RnM5VbUSvxBmCM5cmQw6dHUbzaQoev7Ue-V0S7KbZk0/edit?usp=sharing) | Reader profiles, with a ready-to-use worksheet | Published |
+| [Plaid API Docs in Postman](https://documenter.getpostman.com/view/36366808/2sAYQanBvN#f5f772fb-cebb-4a2a-9ef5-883453348a98) | API reference for a fintech data API | Published |
+| [The Movie Database API Docs](https://tvc.mintlify.app/getting-started) | API docs built with Mintlify | Published |
+| [Refract Documentation](https://refract-documentation.vercel.app/) | Product documentation site | Published |
+| [Veryfi Documentation Audit](https://docs.google.com/document/d/1rGxiGxRiO982NOpMQTdFCULXdRMwpxmiqlvjmhH_0Bc/edit?usp=sharing) | Reviewing and improving existing docs | Published |
+| [Vue.js Documentation Audit](https://docs.google.com/document/d/13DiD6yTqUOy4UhuAL2zuMZvo54G0UusVoEN0ZEcynPw/edit?usp=sharing) | Reviewing developer docs | Published |
 
 ## How I work
 
@@ -36,4 +53,4 @@ OpenAPI 3.1, Markdown, YAML, Git and GitHub, Docusaurus, Postman, Prism, Redocly
 
 ## Follow along
 
-I share each step on the [blog](/blog) and on [LinkedIn](https://www.linkedin.com/in/gagandeep-kaur). The source for everything is on [GitHub](https://github.com/Gagan-TW).
+I share each step on the [blog](/blog) and on [LinkedIn](https://www.linkedin.com/in/gagandeep-kaur-technical-writer). The source for everything is on [GitHub](https://github.com/Gagan-TW).

@@ -135,7 +135,7 @@ const config = {
               {label: 'Portfolio', to: '/portfolio'},
               {label: 'Blog', to: '/blog'},
               {label: 'GitHub', href: 'https://github.com/Gagan-TW'},
-              {label: 'LinkedIn', href: 'https://www.linkedin.com/in/gagandeep-kaur'},
+              {label: 'LinkedIn', href: 'https://www.linkedin.com/in/gagandeep-kaur-technical-writer'},
             ],
           },
         ],

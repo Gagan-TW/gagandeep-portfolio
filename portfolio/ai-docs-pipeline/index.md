@@ -6,7 +6,7 @@ description: An AI documentation pipeline that generates, tests, and checks API 
 
 # Project 2: AI Docs Pipeline
 
-**Status:** Planned. Starts late November 2026, once Project 1 is complete.
+**Status:** Planned. In Progress
 
 ## The idea
 

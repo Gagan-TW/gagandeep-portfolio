@@ -6,7 +6,7 @@ tags: [learning-in-public, portfolio, api-docs, ai-docs]
 description: The plan for this site, the two projects I am building, and why I am sharing every step.
 ---
 
-I have five years of technical writing behind me. Until now, most of that work lived inside company tools where nobody outside could see it.
+I have over four years of technical writing behind me. Until now, most of that work lived inside company tools where nobody outside could see it.
 
 So I am changing that. From today, I build in public.
 

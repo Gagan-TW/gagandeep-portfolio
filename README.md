@@ -126,7 +126,7 @@ For recruiters and technical audiences, this project communicates a few importan
 ## Connect
 
 - GitHub: https://github.com/Gagan-TW
-- LinkedIn: https://www.linkedin.com/in/gagandeep-kaur
+- LinkedIn: https://www.linkedin.com/in/gagandeep-kaur-technical-writer
 
 ## License
 
