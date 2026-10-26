@@ -10,8 +10,8 @@
 const sidebars = {
   portfolioSidebar: [
     'index',
-    {type: 'doc', id: 'loyaltyloop/index', label: 'Project 1: LoyaltyLoop API Docs'},
-    {type: 'doc', id: 'ai-docs-pipeline/index', label: 'Project 2: AI Docs Pipeline'},
+    // {type: 'doc', id: 'loyaltyloop/index', label: 'Project 1: LoyaltyLoop API Docs'},
+    // {type: 'doc', id: 'ai-docs-pipeline/index', label: 'Project 2: AI Docs Pipeline'},
   ],
 };
 
