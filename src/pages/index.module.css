@@ -60,6 +60,10 @@
   .buttons {
     justify-content: center;
   }
+       .buttons a {
+       font-size: 1rem;
+       padding: 0.6rem 1.5rem;
+     }
   .profilePhoto {
     width: 180px;
     height: 180px;
