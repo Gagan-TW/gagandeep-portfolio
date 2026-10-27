@@ -39,12 +39,23 @@
 }
 
 @media (max-width: 768px) {
+  .heroBanner {
+    padding: 2.5rem 1rem;
+  }
   .heroInner {
     flex-direction: column-reverse;
     text-align: center;
+    gap: 2rem;
   }
   .heroText {
     text-align: center;
+  }
+  .heroText h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  .heroText p {
+    font-size: 1.1rem;
   }
   .buttons {
     justify-content: center;
