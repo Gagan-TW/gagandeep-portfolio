@@ -1,11 +1,10 @@
 ---
-title: "Your AI Is Only as Good as What It Reads: RAG Explained Simply"
+title: "How to Write Documentation That RAG Systems Can Actually Use"
 description: A beginner-friendly guide to Retrieval-Augmented Generation (RAG), and why good documentation makes AI answers better.
 
 ---
 
-# Your AI Is Only as Good as What It Reads: RAG Explained Simply
-
+# How to Write Documentation That RAG Systems Can Actually Use
 Have you ever asked an AI tool a question and wondered where the answer came from?
 
 It replies in seconds, in confident and well-written sentences. But it has never seen your company's documents. It may not know what changed last month. So on what basis is it answering you?

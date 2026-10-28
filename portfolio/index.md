@@ -16,7 +16,7 @@ Here are selected samples of my documentation and technical writing. New AI/ML a
 
 | Sample | What it shows | Status |
 | --- | --- | --- |
-   | [Your AI Is Only as Good as What It Reads: RAG Explained Simply](./samples/rag-explained.md) | AI/ML explainer: how RAG works, and why good docs make AI answers better | Published |
+   | [How to Write Documentation That RAG Systems Can Actually Use](./samples/rag-explained.md) | AI/ML explainer: how RAG works, and why good docs make AI answers better | Published |
 | [Does Backend Feel Like Magic to You?](https://backendworks.hashnode.dev/does-backend-feel-like-magic-to-you) | Step-by-step Node.js API tutorial, tested in Postman | Published |
 | [How to Build a SaaS Help Centre That Works for Every User](https://docs.google.com/document/d/174Tv0UcltKOY4MEGFnW4t8fic18KobSWw-KQJev1qow/edit?usp=sharing) | Help centre structure, navigation, and search for SaaS products | Published |
 | [Why Audience Analysis Matters in Technical Documentation](https://docs.google.com/document/d/1RnM5VbUSvxBmCM5cmQw6dHUbzaQoev7Ue-V0S7KbZk0/edit?usp=sharing) | Reader profiles, with a ready-to-use worksheet | Published |
