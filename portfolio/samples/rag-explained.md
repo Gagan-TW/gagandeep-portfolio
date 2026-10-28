@@ -1,10 +1,11 @@
 ---
 title: "How to Write Documentation That RAG Systems Can Actually Use"
-description: A beginner-friendly guide to Retrieval-Augmented Generation (RAG), and why good documentation makes AI answers better.
+description: A practical guide for technical writers on how RAG works and how to write documentation for RAG systems that AI can use to give correct answers.
 
 ---
 
 # How to Write Documentation That RAG Systems Can Actually Use
+
 Have you ever asked an AI tool a question and wondered where the answer came from?
 
 It replies in seconds, in confident and well-written sentences. But it has never seen your company's documents. It may not know what changed last month. So on what basis is it answering you?
@@ -14,6 +15,10 @@ Sometimes, when the AI does not know, it does not say so. It fills the gap with 
 What if, before answering, the AI could look up the right information in a trusted source, such as your company's documents, and answer from that instead of guessing?
 
 That is exactly what RAG does.
+
+I have been a technical writer for over four years, mostly writing API documentation. For most of that time, I wrote for one reader: the person on the other side of the page. Today, there is a second reader. AI tools now read our documents too, and their answers are only as good as what we give them.
+
+In this article, I will walk you through what RAG is, where it goes wrong, and how to write documentation for RAG that helps AI give correct answers.
 
 ## What Is RAG?
 
@@ -51,17 +56,13 @@ An AI model learns by reading a huge amount of text. Once that training ends, it
 
 This happens for two main reasons.
 
-### Its knowledge stops at a certain date
-
 Every AI model is trained up to a point in time. Anything that happened after that, such as a new product feature, a changed price, or an updated policy, is simply unknown to it. But it will still try to answer, using older information that may no longer be true.
 
-### It has never seen your private documents
 
 An AI model learns from public information. It has never read your company's help centre, your internal guides, or your latest release notes. So when a customer asks about your product, the AI does not know the real answer. It writes one that sounds like it could be true.
 
-### Why it guesses instead of saying "I don't know"
 
-OpenAI, the company behind ChatGPT, explains that AI models are trained in a way that rewards guessing. It is like a student in a multiple-choice exam. Leaving a question blank earns nothing, but a guess might be right. So the student guesses, every time.
+[OpenAI, the company behind ChatGPT, explains](https://openai.com/index/why-language-models-hallucinate/) that AI models are trained in a way that rewards guessing. It is like a student in a multiple-choice exam. Leaving a question blank earns nothing, but a guess might be right. So the student guesses, every time.
 
 Now think back to our new support agent. If she answered from memory on her first day, she would make the same mistakes. She does not know the latest policy, and she has never read your help centre. What makes her reliable is not her memory. It is that she looks things up first.
 
@@ -96,28 +97,13 @@ Those pieces are attached to the question, along with an instruction such as "An
 **7. Write the answer.**
 The AI writes its reply using the information in front of it. This is the Generation.
 
-Let's put it all together. Here are the same steps in short, grouped into the two jobs RAG does:
-**Preparing the documents (done once):**
-
-1. Collect the trusted documents.
-2. Split them into small chunks.
-3. Turn each chunk into numbers.
-4. Store them in a vector database.
-
-**Answering a question (every time):**
-
-1. Turn the question into numbers.
-2. Find the closest chunks.
-3. Add them to the question.
-4. Let the AI write the answer from them.
-
 Remember our support agent? Before her first customer ever wrote in, someone had to write the help centre, organise it into clear articles, and make it searchable. That is Stage 1. Without it, she would have nothing to look up.
 
 *RAG does not start with the question. It starts with the documents.*
 
 ## A Real Example: One Question, From Start to Finish
 
-Let's follow one real question through RAG. Imagine a payments app called PayEase. Its help centre has an article called "Why Payments Fail", with a section like this:
+Let's follow one question through RAG. Imagine a made-up payments app called PayEase. Its help centre has an article called "Why Payments Fail", with a section like this:
 
 > **Card declined by the bank**
 > If your bank declines a card payment, PayEase shows error code PE-402. This usually happens when the card has expired, the daily limit is reached, or online payments are turned off for the card. Check your card details, then try again or use another payment method.
@@ -160,7 +146,7 @@ The answer is specific, correct, and based on PayEase's own help centre. Not a g
 
 ## Where RAG Still Goes Wrong
 
-RAG makes AI answers far more reliable. But it is not magic. Researchers who built real RAG systems found several places where they still fail. Here are the most common ones, using our PayEase example.
+RAG makes AI answers far more reliable. But it is not magic. [Researchers who built real RAG systems](https://arxiv.org/html/2401.05856v1) found several places where they still fail. Here are the most common ones, using our PayEase example.
 
 ### The answer is not in the documents
 
@@ -169,6 +155,8 @@ A customer asks, "How do I get a refund for a UPI payment?" But PayEase never wr
 ### The right piece is found, but it has lost its meaning
 
 Remember, documents are cut into small chunks. Imagine one chunk that says only: "This usually happens when the card has expired or the daily limit is reached." On its own, it does not say which error it is about. The heading "Card declined by the bank" and the code PE-402 were left behind in another chunk. So when a customer asks about PE-402, this chunk may not be found at all.
+
+[Anthropic suggests one fix](https://anthropic.com/news/contextual-retrieval): add a short line of context to each chunk, such as which page and section it came from, so it still makes sense on its own. Writers can help even more by making each section clear without that extra help.
 
 ### The answer is there, but the AI misses it
 
@@ -186,16 +174,20 @@ Look at these problems again. A missing article. A chunk that makes no sense wit
 
 *RAG can only be as good as the documents it reads.*
 
-## Why This Matters for Technical Writers
+## How to Write Documentation for RAG
 
 Not only humans need clear, concise, complete, and correct documentation. AI needs it too.
 
-It is true that AI can make your life easier. But it can only keep that promise if you feed it good documents. Here are the writing practices that make the difference, and why each one matters for RAG.
+In my work as a technical writer, I have seen how outdated pages become bad references, how using different words for the same thing leads to more support tickets, and how buried pages slow down onboarding. I have also seen how clear numbered lists, a good heading structure, and separating concepts, tasks, and reference topics change the whole picture. A RAG system feels every one of these problems, and benefits from every one of these fixes.
+
+Here are the writing practices that make the difference, and why each one matters for RAG.
 
 | Writing practice | Why it matters for RAG | Example |
 | --- | --- | --- |
 | **Clear headings and topic hierarchy** | Headings tell the system what each chunk is about. | A chunk under "Card declined by the bank" is easy to find. One under "More information" is not. |
 | **Sections that make sense on their own** | A chunk may reach the AI without the page around it. | Write "Error PE-402 means your bank declined the payment", not "This error means…". |
+| **Consistent terms** | Using one word for one thing helps the system match questions to the right chunk. | If your product says "refund", don't call it "money back" on one page and "reversal" on another. |
+| **Separate concept, task, and reference topics** | Each chunk then answers one kind of question: what it is, how to do it, or what the details are. | Keep "What is a refund?" apart from "How to request a refund" and "Refund time limits". |
 | **Complete pages** | If the answer is not written anywhere, there is nothing to retrieve. | Use support tickets and search terms to find the questions you have not answered yet. |
 | **Related information kept together or linked** | Some questions need more than one article. | Link the failed payments article to the refunds article, so the customer gets the full answer. |
 | **Up-to-date content** | Old and new versions can confuse the AI. | When a policy changes, update or remove the old page instead of adding a new one beside it. |
@@ -220,7 +212,7 @@ Start with your own documentation:
 
 That is how you start building documentation for RAG.
 
-*Always remember: you are the only one the AI can rely on. It has no teammate to ask, and when the answer is missing, it guesses. Your documents can help it guess less and use facts more.*
+*Always remember: AI has no teammate to ask. Your documents are what it relies on, and when the answer is missing, it guesses. Good documents help it guess less and use facts more.*
 
 ## Sources
 
